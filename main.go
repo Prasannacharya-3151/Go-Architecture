@@ -24,7 +24,7 @@ func main() { //in here no parameters assigned beacuse the main function is the 
 	log.Println("DB connected")
 
 	repo := repository.NewPostgressRepository(dbConn) //repo is an varible and NewPostgrsRepository is a constructor fucntion and then dbConn passed as dependency
-   //we have created a repository instanceby calling the NewPostgressRepository function and passing the dbConn as an argument
+   //we have created a repository instance by calling the NewPostgressRepository function and passing the dbConn as an argument
 
    if err := repo.Init(); err != nil {
 	log.Fatalln(err)
